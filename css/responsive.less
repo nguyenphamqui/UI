@@ -1,0 +1,77 @@
+@import "variable";
+// Common
+@media screen and (min-width: 500px) {
+    .menu-wrapper {
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .tab-pane {
+        .card {
+            width: calc(50% - 20px);
+        }
+    }
+}
+@media screen and (min-width: @screen-sm-min) {
+    .tab-pane {
+        .card {
+            width: calc(33% - 20px);
+        }
+    }
+}
+// Phone
+@media screen and (max-width: @screen-xs-max) {
+    // Home tab
+    // .menu-wrapper {
+    //     .card {
+    //         margin: 0 auto;
+    //     }
+    // }
+    .nav-item {
+        font-size: 1rem;
+    }
+    .summary-container {
+        flex-direction: column;
+    }
+///////////////////////////
+// Summary tab
+
+
+/////////////////////////////////
+
+// Contact tab
+
+
+}
+@media screen and (max-width: @screen-md-min) {
+    .summary-container {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: @screen-md-min) {
+    .summary-left,
+    .summary-right {
+        width: calc(50% - 20px);
+    }
+    .summary-right {
+        margin-top: 0;
+    }
+    .summary-right--wrapper {
+        padding: 20px 30px;
+    }
+}
+
+// Tablet
+@media screen and (min-width: @screen-sm-min) and(max-width: @screen-sm-max) {
+    
+}
+
+// Desktop
+@media screen and (min-width: @screen-md-min) and(max-width: @screen-md-max) {
+    
+}
+
+// Large Desktop
+@media screen and (min-width: @screen-lg-min){
+    
+}
