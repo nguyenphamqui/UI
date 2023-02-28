@@ -18,10 +18,11 @@ body {
 }
 .tab-pane {
     overflow: auto;
+    padding-top: 20px;
     .card {
         margin-top: 10px;
         padding: 20px 10px 10px;
-        width: auto;
+        width: 100%;
         margin: 10px;
         > a {
             width: 120px;
@@ -32,13 +33,32 @@ body {
 .nav.nav-tabs {
     justify-content: center;
     font-size: 21px;
-    margin: 20px 0;
+    margin: 20px 0 0;
+    border: 0;
+}
+.nav-item {
+    .nav-link {
+        color: #fff;
+        margin-bottom: 0;
+        border: 0;
+        border-radius: 20px 20px 0 0;
+        &.active {
+            background: #1a1a1a;
+            border: 0;
+            color: #fff;
+            
+        }
+        &:hover {
+            border-color: transparent;
+        }
+    }
 }
 #order-list-title {
     width: 100%;
     font-family: 'Roboto';
     font-size: 20px;
     color: aqua;
+    padding-left: 10px;
 }
 .container {
     background-color: transparent;
@@ -244,9 +264,14 @@ ol .order-detail {
 .tab-content {
     height: calc(100% - 100px);
     word-break: break-word;
+    background-color: rgb(26, 26, 26);
+    border-radius: 30px 30px 0 0;
 }
 .tab-pane {
     height: 100%;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
 }
 .subtotal {
     &-container {
